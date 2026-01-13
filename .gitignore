@@ -1,0 +1,27 @@
+# --- Docker & System ---
+.DS_Store
+Thumbs.db
+*.log
+
+# --- Large Files & Backups (Fixes the 100MB error) ---
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+public_html.zip
+
+
+# --- CodeIgniter 4 Specific ---
+app/writable/*
+!app/writable/index.html
+!app/writable/.htaccess
+
+# If you use Composer, you usually ignore vendor
+# However, if you want the code to work immediately on pull, 
+# you can leave vendor out of this list.
+# vendor/
+
+# --- IDEs ---
+.vscode/
+.idea/

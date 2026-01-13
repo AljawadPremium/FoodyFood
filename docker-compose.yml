@@ -1,0 +1,49 @@
+version: "3.8"
+
+services:
+  foody_app:
+    build: .
+    container_name: foody_app
+    ports:
+      - "3020:80"
+    volumes:
+      - ./app:/var/www/html
+    environment:
+      - CI_ENVIRONMENT=development
+      # Use your live URL to avoid session/cookie issues
+      - app.baseURL=https://foodyfc.com.sa/
+      - database.default.hostname=foody_db
+      - database.default.database=xdghjgte_foodyfc
+      - database.default.username=xdghjgte_foodyfc
+      - database.default.password=Bew=6S3!os#1
+      - app.uriProtocol=REQUEST_URI
+    depends_on:
+      - foody_db
+    restart: always
+
+  foody_db:
+    image: mysql:8.0
+    container_name: foody_db
+    # This line disables the strict "Group By" rule for the whole app
+    command: --sql-mode="STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION"
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=xdghjgte_foodyfc
+      - MYSQL_USER=xdghjgte_foodyfc
+      - MYSQL_PASSWORD=Bew=6S3!os#1
+    volumes:
+      - ./mysql:/var/lib/mysql
+    restart: always
+
+  foody_phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: foody_phpmyadmin
+    ports:
+      - "8088:80"
+    environment:
+      - PMA_HOST=foody_db
+      - PMA_USER=root
+      - PMA_PASSWORD=root
+    depends_on:
+      - foody_db
+    restart: always
