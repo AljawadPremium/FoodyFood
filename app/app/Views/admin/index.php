@@ -423,7 +423,7 @@
                                                         <div>Amt : <?php echo $currency; ?> <?php echo round($tvalue['total_sum']); ?></div>
                                                     </div>
                                                     <div class="center_100">
-                                                        <a target="_blank" href="<?php echo base_url('admin/customer/view/') ?><?php echo en_de_crypt($tvalue['user_id']); ?>">
+                                                        <a target="_blank" href="<?php echo base_url('admin/customer/view/') ?><?php echo en_de_crypt($tvalue['user_id'] ?? ''); ?>">
                                                             <span class="top_customer">
                                                                 <img src="<?php echo $tvalue['logo']; ?>" onerror="this.src='<?php echo base_url('public/admin/empty.png') ?>'" alt="<?php echo $tvalue['fname']; ?>">
                                                             </span>
