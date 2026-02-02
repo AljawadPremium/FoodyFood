@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="<?php echo base_url('public/frontend/'); ?>/css/flaticon.css">
     <link rel="stylesheet" href="<?php echo base_url('public/frontend/'); ?>/css/font-awesome-pro.css">
     <link rel="stylesheet" href="<?php echo base_url('public/frontend/'); ?>/css/spacing.css">
-    <link rel="stylesheet" href="<?php echo base_url('public/frontend/'); ?>/css/main.css?v=1.2">
+    <link rel="stylesheet" href="<?php echo base_url('public/frontend/'); ?>/css/main.css?v=1.3">
     <script src="<?php echo base_url('public/frontend/'); ?>/js/vendor/jquery.js"></script>
 </head>
 
