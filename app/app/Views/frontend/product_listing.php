@@ -129,17 +129,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="bd-filter__widget child-content-hidden">
-                                <div class="bd-filter__content">
-                                    <a href="<?php echo base_url('products'); ?>">
-                                        <div class="bd-flash___banner-item p-relative">
-                                            <div class="bd-flash__banner-thumb w-img">
-                                                <img src="<?php echo base_url('public/frontend/img/'); ?>/trending/flash/flash-banner-01.jpg" alt="flash-banner">
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
