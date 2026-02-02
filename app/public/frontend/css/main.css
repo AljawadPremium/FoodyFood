@@ -5705,7 +5705,7 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .bd-trending__product-thumb {
-  background: var(--clr-bg-grey);
+  background: #ffffff;
   margin-bottom: 25px;
   padding: 35px 30px;
   position: relative;
