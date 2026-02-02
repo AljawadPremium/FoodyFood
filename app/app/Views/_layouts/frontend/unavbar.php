@@ -15,19 +15,34 @@
     <meta property="og:image" content="https://yourwebsite.com/images/product.jpg" />
     <meta property="og:url" content="https://yourwebsite.com/product/123" />
     <link rel="shortcut icon" href="<?php echo base_url('public/frontend/'); ?>img/fev.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cairo:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="<?php echo base_url('public/frontend/'); ?>/css/bootstrap.css">
     <link rel="stylesheet" href="<?php echo base_url('public/frontend/'); ?>/css/meanmenu.css">
-    <link rel="stylesheet" href="<?php echo base_url('public/frontend/'); ?>/css/animate.css">
-    <link rel="stylesheet" href="<?php echo base_url('public/frontend/'); ?>/css/owl-carousel.css">
-    <link rel="stylesheet" href="<?php echo base_url('public/frontend/'); ?>/css/swiper-bundle.css">
-    <link rel="stylesheet" href="<?php echo base_url('public/frontend/'); ?>/css/backtotop.css">
-    <link rel="stylesheet" href="<?php echo base_url('public/frontend/'); ?>/css/ui-range-slider.css">
-    <link rel="stylesheet" href="<?php echo base_url('public/frontend/'); ?>/css/magnific-popup.css">
-    <link rel="stylesheet" href="<?php echo base_url('public/frontend/'); ?>/css/nice-select.css">
-    <link rel="stylesheet" href="<?php echo base_url('public/frontend/'); ?>/css/flaticon.css">
-    <link rel="stylesheet" href="<?php echo base_url('public/frontend/'); ?>/css/font-awesome-pro.css">
-    <link rel="stylesheet" href="<?php echo base_url('public/frontend/'); ?>/css/spacing.css">
-    <link rel="stylesheet" href="<?php echo base_url('public/frontend/'); ?>/css/main.css?v=1.4">
+    <link rel="preload" href="<?php echo base_url('public/frontend/'); ?>/css/animate.css" as="style"
+        onload="this.rel='stylesheet'">
+    <link rel="preload" href="<?php echo base_url('public/frontend/'); ?>/css/owl-carousel.css" as="style"
+        onload="this.rel='stylesheet'">
+    <link rel="preload" href="<?php echo base_url('public/frontend/'); ?>/css/swiper-bundle.css" as="style"
+        onload="this.rel='stylesheet'">
+    <link rel="preload" href="<?php echo base_url('public/frontend/'); ?>/css/backtotop.css" as="style"
+        onload="this.rel='stylesheet'">
+    <link rel="preload" href="<?php echo base_url('public/frontend/'); ?>/css/ui-range-slider.css" as="style"
+        onload="this.rel='stylesheet'">
+    <link rel="preload" href="<?php echo base_url('public/frontend/'); ?>/css/magnific-popup.css" as="style"
+        onload="this.rel='stylesheet'">
+    <link rel="preload" href="<?php echo base_url('public/frontend/'); ?>/css/nice-select.css" as="style"
+        onload="this.rel='stylesheet'">
+    <link rel="preload" href="<?php echo base_url('public/frontend/'); ?>/css/flaticon.css" as="style"
+        onload="this.rel='stylesheet'">
+    <link rel="preload" href="<?php echo base_url('public/frontend/'); ?>/css/font-awesome-pro.css" as="style"
+        onload="this.rel='stylesheet'">
+    <link rel="preload" href="<?php echo base_url('public/frontend/'); ?>/css/spacing.css" as="style"
+        onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="<?php echo base_url('public/frontend/'); ?>/css/main.css?v=1.5">
     <script src="<?php echo base_url('public/frontend/'); ?>/js/vendor/jquery.js"></script>
 </head>
 

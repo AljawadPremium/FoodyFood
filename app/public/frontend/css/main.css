@@ -10,7 +10,10 @@
   --bd-ff-body: 'Jost', sans-serif;
   --bd-ff-heading: 'Jost', sans-serif;
   --bd-ff-p: font-family: 'Jost', sans-serif;
-  ;
+
+  --font-en: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-ar: 'Cairo', system-ui, -apple-system, sans-serif;
+
   --bd-ff-fontawesome: "Font Awesome 6 Pro";
   /**
   @color declaration
@@ -107,11 +110,18 @@
     typography css start 
 ---------------------------------*/
 body {
-  font-family: var(--bd-ff-body);
-  font-size: var(--bd-fs-body);
+  font-family: var(--font-en);
+  font-size: 16px;
+  line-height: 1.6;
   font-weight: normal;
-  color: var(--clr-common-body-text);
-  line-height: 26px;
+  color: #666666;
+  /* Optimized text contrast */
+}
+
+html[lang="ar"],
+html[dir="rtl"],
+body:lang(ar) {
+  font-family: var(--font-ar);
 }
 
 a {
@@ -127,7 +137,7 @@ h6 {
   font-family: var(--bd-ff-heading);
   color: var(--clr-common-heading);
   margin-top: 0px;
-  font-weight: var(--bd-fw-bold);
+  font-weight: 600;
   line-height: 1.3;
   -webkit-transition: all 0.3s ease-out 0s;
   -moz-transition: all 0.3s ease-out 0s;
@@ -137,15 +147,15 @@ h6 {
 }
 
 h1 {
-  font-size: var(--bd-fs-h1);
+  font-size: 40px;
 }
 
 h2 {
-  font-size: var(--bd-fs-h2);
+  font-size: 32px;
 }
 
 h3 {
-  font-size: var(--bd-fs-h3);
+  font-size: 24px;
 }
 
 h4 {
