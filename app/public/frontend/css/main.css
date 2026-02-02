@@ -10532,3 +10532,32 @@ a.downl_brchr {
 .crt_btn_as.cart-btn.bd-fill__btn:focus {
   color: #fff;
 }
+/* Image Responsiveness - Step 5 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Section Helper - Step 3 */
+.section {
+  padding: 60px 0;
+}
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 0;
+  }
+}
+
+/* Product Titles - Step 4 */
+.bd-product__title {
+  color: #1C1D1B;
+  margin-bottom: 8px; /* Spacing polish */
+}
+
+/* Button Hover Refinement - Step 4 */
+.bd-bn__btn-1 {
+  transition: all 0.25s ease;
+}
+.bd-bn__btn-1:hover {
+  transform: translateY(-1px);
+}
